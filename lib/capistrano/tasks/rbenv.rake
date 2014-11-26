@@ -41,7 +41,7 @@ namespace :load do
       end
     }
 
-    set :rbenv_roles, fetch(:rbenv_roles, :all)
+    set :rbenv_roles, fetch(:rbenv_roles, :app)
 
     set :rbenv_ruby_dir, -> { "#{fetch(:rbenv_path)}/versions/#{fetch(:rbenv_ruby)}" }
     set :rbenv_map_bins, %w{rake gem bundle ruby rails}
